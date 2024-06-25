@@ -5,10 +5,11 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div class="topnav">
-    <RouterLink class="active" to="/">Inicio</RouterLink>
-    <RouterLink  to="/">Preventas</RouterLink>
-    <RouterLink  to="/">etc</RouterLink>
-    <RouterLink  to="/">.</RouterLink>
+    <RouterLink class="active" to="/">Peliculas</RouterLink>
+    <RouterLink  to="/">Cines</RouterLink>
+    <RouterLink  to="/">Promociones</RouterLink>
+    <RouterLink  to="/">Confiteria</RouterLink>
+    <RouterLink  to="/">Login</RouterLink>
   </div>
   <RouterView />
 </template>
