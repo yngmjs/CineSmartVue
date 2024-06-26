@@ -50,7 +50,6 @@ export default {
 <template>
     <div class="container">
         <div class="row">
-            
             <div v-for="item in firstTenBirds" :key="item.id" class="col-sm-4"> <!-- Asegúrate de usar una clave única como 'item.id' -->
                 <div class="card" style="margin-bottom: 10px;">
                     <!-- Puedes usar 'item.images.main' o la propiedad adecuada de tu objeto 'item' para la imagen -->
@@ -67,17 +66,10 @@ export default {
             </div>
         </div>
     </div>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                
-            </div>
-        </div>
-    </div>
 </template>
 
 <style scoped>
+
 .card {
   /* Add shadows to create the "card" effect */
   background-color: #333;

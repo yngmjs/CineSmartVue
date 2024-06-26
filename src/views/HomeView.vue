@@ -4,9 +4,15 @@ import MoviesComponent from '../components/MoviesComponent.vue'
 </script>
 
 <template>
-  <main>
+  <main class="mein">
     <!-- <TheWelcome /> -->
     <br>
     <MoviesComponent />
   </main>
 </template>
+
+<style>
+.mein{
+    background-color: dimgrey;
+}
+</style>
