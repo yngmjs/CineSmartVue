@@ -1,13 +1,14 @@
 <script setup>
+import SucursalComponentVue from '@/components/Sucursales/SucursalComponent.vue'
 import MoviesComponent from '../components/MoviesComponent.vue'
-
 </script>
 
 <template>
   <main class="mein">
     <!-- <TheWelcome /> -->
     <br>
-    <MoviesComponent />
+    <!-- <MoviesComponent /> -->
+    <SucursalComponentVue></SucursalComponentVue>
   </main>
 </template>
 
