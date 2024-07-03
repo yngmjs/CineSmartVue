@@ -49,6 +49,8 @@ export default {
 
 <template>
     <div class="container">
+        <h1 class="text-white">Peliculas</h1>
+        <hr>
         <div class="row">
             <div v-for="item in firstTenBirds" :key="item.id" class="col-sm-4"> <!-- Asegúrate de usar una clave única como 'item.id' -->
                 <div class="card" style="margin-bottom: 10px;">

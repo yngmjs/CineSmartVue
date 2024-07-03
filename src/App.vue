@@ -28,14 +28,14 @@ import HelloWorld from './components/HelloWorld.vue'
             <RouterLink class="nav-link" to="/">Sucursales</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/">Confitería</RouterLink>
+            <RouterLink class="nav-link" to="/confiteria">Confitería</RouterLink>
           </li>
           <li class="nav-item dropdown">
             <RouterLink class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               SmartClub
             </RouterLink>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><RouterLink class="dropdown-item" href="#">Promociones</RouterLink></li>
+              <li><RouterLink class="dropdown-item" to="/promociones">Promociones</RouterLink></li>
               <li><hr class="dropdown-divider"></li>
               <li><RouterLink class="dropdown-item" href="#">Preventas</RouterLink></li>
             </ul>

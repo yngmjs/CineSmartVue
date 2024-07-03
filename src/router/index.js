@@ -13,17 +13,17 @@ const router = createRouter({
     //   path: '/sucursal',
     //   name: 'confiteria',
     //   component: () => import('../views/AboutView.vue')
-    // },
-    // {
-    //   path: '/confiteria',
-    //   name: 'confiteria',
-    //   component: ()=> import('../views/ConfiteriaView.vue')
-    // },
-    // {
-    //   path: '/promociones',
-    //   name: 'promociones',
-    //   component: ()=> import('../views/PromocionesView.vue')
-    // },
+    //},
+    {
+      path: '/confiteria',
+      name: 'confiteria',
+      component: ()=> import('../views/ConfiteriaView.vue')
+    },
+    {
+      path: '/promociones',
+      name: 'promociones',
+      component: ()=> import('../views/PromocionView.vue')
+    },
     // {
     //   path: '/preventa',
     //   name: 'preventa',
