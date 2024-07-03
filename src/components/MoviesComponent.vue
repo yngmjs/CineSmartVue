@@ -60,7 +60,7 @@ export default {
                         <h5>Duracion: {{item.duracion}} - Idioma: {{ item.idioma }}</h5>
                         <!-- <h2>{{ item.name.spanish }}</h2> -->
                          <!-- Usar el nombre español del ave, o ajusta según tus datos -->
-                        <button type="button" class="btn btn-success">Comprar Entradas</button>
+                        <button type="button" class="btn btn-danger">Ver Horarios</button>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 <script setup>
-import SucursalComponentVue from '@/components/Sucursales/SucursalComponent.vue'
+//import SucursalComponentVue from '@/components/Sucursales/SucursalComponent.vue'
+import PromocionComponentVue from '@/components/Promociones/PromocionComponent.vue'
 import MoviesComponent from '../components/MoviesComponent.vue'
 </script>
 
@@ -8,7 +9,8 @@ import MoviesComponent from '../components/MoviesComponent.vue'
     <!-- <TheWelcome /> -->
     <br>
     <!-- <MoviesComponent /> -->
-    <SucursalComponentVue></SucursalComponentVue>
+    <!-- <SucursalComponentVue></SucursalComponentVue> -->
+    <PromocionComponentVue></PromocionComponentVue>
   </main>
 </template>
 

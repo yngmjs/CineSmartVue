@@ -9,26 +9,26 @@ const router = createRouter({
       name: 'home',
       component: HomeView
     },
-    {
-      path: '/sucursal',
-      name: 'confiteria',
-      component: () => import('../views/AboutView.vue')
-    },
-    {
-      path: '/confiteria',
-      name: 'confiteria',
-      component: ()=> import('../views/ConfiteriaView.vue')
-    },
-    {
-      path: '/promociones',
-      name: 'promociones',
-      component: ()=> import('../views/PromocionesView.vue')
-    },
-    {
-      path: '/preventa',
-      name: 'preventa',
-      component: ()=> import('../views/PreventasView.vue')
-    },
+    // {
+    //   path: '/sucursal',
+    //   name: 'confiteria',
+    //   component: () => import('../views/AboutView.vue')
+    // },
+    // {
+    //   path: '/confiteria',
+    //   name: 'confiteria',
+    //   component: ()=> import('../views/ConfiteriaView.vue')
+    // },
+    // {
+    //   path: '/promociones',
+    //   name: 'promociones',
+    //   component: ()=> import('../views/PromocionesView.vue')
+    // },
+    // {
+    //   path: '/preventa',
+    //   name: 'preventa',
+    //   component: ()=> import('../views/PreventasView.vue')
+    // },
     // {
     //   path: '/login',
     //   name: 'login',
