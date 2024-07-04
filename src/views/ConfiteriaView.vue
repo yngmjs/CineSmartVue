@@ -1,4 +1,5 @@
 <script setup>
+import FooterComponentVue from '@/components/FooterComponent.vue'
 import ConfiteriaComponent from '../components/Confiteria/ConfiteriaComponent.vue'
 </script>
 
@@ -7,12 +8,12 @@ import ConfiteriaComponent from '../components/Confiteria/ConfiteriaComponent.vu
     <br>
     <ConfiteriaComponent></ConfiteriaComponent>
     <br>
-    <hr>
+    <FooterComponentVue></FooterComponentVue>
   </main>
 </template>
 
 <style>
 .mein{
-    background-color: dimgrey;
+    background-color: #69A84B;
 }
 </style>

@@ -20,10 +20,10 @@
                         <hr>
                         <div class="row">
                             <div class="col-7">
-                                <h2 class="text-danger">$28.990</h2>
+                                <h2 class="text-dark">$28.990</h2>
                             </div>
                             <div class="col-4">
-                                <button class="btn btn-primary">Comprar</button>
+                                <button class="btn btn-success">Comprar</button>
                             </div>
                         </div>
                     </li>

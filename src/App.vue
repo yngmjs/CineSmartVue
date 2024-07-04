@@ -14,7 +14,7 @@ import HelloWorld from './components/HelloWorld.vue'
   </div> -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Cine-Smart</a>
+      <a class="navbar-brand" href="#"><img src="./assets/s.png" width="70px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,10 +34,10 @@ import HelloWorld from './components/HelloWorld.vue'
             <RouterLink class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               SmartClub
             </RouterLink>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><RouterLink class="dropdown-item" to="/promociones">Promociones</RouterLink></li>
+            <ul class="dropdown-menu nab" aria-labelledby="navbarDropdown">
+              <li><RouterLink class="dropdown-item text-white" to="/promociones">Promociones</RouterLink></li>
               <li><hr class="dropdown-divider"></li>
-              <li><RouterLink class="dropdown-item" href="#">Preventas</RouterLink></li>
+              <li><RouterLink class="dropdown-item text-white" href="#">Preventas</RouterLink></li>
             </ul>
           </li>
         </ul>
@@ -52,9 +52,17 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <style scoped>
+#app {
+  background-color: #69A84B;
+}
+body{
+  margin: 0; 
+  padding: 0;
+  background-color: #69A84B;
+}
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #69A84B;
   overflow: hidden;
 }
 
@@ -78,5 +86,9 @@ import HelloWorld from './components/HelloWorld.vue'
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+
+.nab{
+  background-color: #69A84B;
 }
 </style>
