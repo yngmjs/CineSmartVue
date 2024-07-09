@@ -1,228 +1,101 @@
-<script>
-    // import '../util/utilASientos.js'
-</script>
-
 <template>
-<div class="container">
-    <h1 class="text-white"></h1>
-    <hr>
-    <div class="movie-container">
-      <label> Select a movie:</label>
-      <select id="movie">
-        <option value="220">Godzilla vs Kong (RS.220)</option>
-        <option value="320">Radhe (RS.320)</option>
-        <option value="250">RRR (RS.250)</option>
-        <option value="260">F9 (RS.260)</option>
-      </select>
-    </div>
-
-    <ul class="showcase">
-      <li>
-        <div class="seat"></div>
-        <small>Available</small>
-      </li>
-      <li>
-        <div class="seat selected"></div>
-        <small>Selected</small>
-      </li>
-      <li>
-        <div class="seat sold"></div>
-        <small>Sold</small>
-      </li>
-    </ul>
-    <div class="container">
-      <div class="screen"></div>
-
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
+    <div class="container mt-4">
+      <h2 class="text-light">Selecciona Asiento(s)</h2>
+      <div class="row justify-content-center">
+        <div class="d-flex justify-content-center">
+            <img src="/src/assets/pantalla.png" alt="">
+        </div>
+        <div>
+            <br>
+        </div>
+        <div
+          v-for="(row, rowIndex) in seats"
+          :key="rowIndex"
+          class="col-12 d-flex justify-content-center mb-3">
+          <div
+            v-for="(seat, seatIndex) in row"
+            :key="seatIndex"
+            :class="['seat', seat.status, seat.selected ? 'selected' : '']"
+            @click="toggleSeatSelection(rowIndex, seatIndex)"
+          >
+            {{ seat.number }}
+          </div>
+        </div>
       </div>
-
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat sold"></div>
-        <div class="seat sold"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat sold"></div>
-        <div class="seat sold"></div>
-      </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat sold"></div>
-        <div class="seat sold"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat sold"></div>
-        <div class="seat sold"></div>
-        <div class="seat sold"></div>
-        <div class="seat"></div>
+      <div class="d-flex justify-content-center">
+        <button class="btn btn-primary" @click="confirmSelection">
+          Confirmar Asientos
+        </button>
       </div>
     </div>
-
-    <p class="text">
-      You have selected <span id="count">0</span> seat for a price of RS.<span
-        id="total"
-        >0</span
-      >
-    </p>
-    <!-- <script src="script.js"></script> -->
-    
-</div>
-<br>
-</template>
-
-
-<style>
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #242333;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-family: "Lato", sans-serif;
-  margin: 0;
-}
-
-.movie-container {
-  margin: 20px 0;
-}
-
-.movie-container select {
-  background-color: #fff;
-  border: 0;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-left: 10px;
-  padding: 5px 15px 5px 15px;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-.container {
-  perspective: 1000px;
-  margin-bottom: 30px;
-}
-
-.seat {
-  background-color: #444451;
-  height: 26px;
-  width: 32px;
-  margin: 3px;
-  font-size: 50px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.seat.selected {
-  background-color: green;
-}
-
-.seat.sold {
-  background-color: #fff;
-}
-
-.seat:nth-of-type(2) {
-  margin-right: 18px;
-}
-
-.seat:nth-last-of-type(2) {
-  margin-left: 18px;
-}
-
-.seat:not(.sold):hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
-
-.showcase .seat:not(.sold):hover {
-  cursor: default;
-  transform: scale(1);
-}
-
-.showcase {
-  background: rgba(0, 0, 0, 0.1);
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: #777;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-}
-
-.showcase li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 10px;
-}
-.showcase li small {
-  margin-left: 2px;
-}
-
-.row {
-  display: flex;
-}
-
-.screen {
-  background-color: #fff;
-  height: 120px;
-  width: 100%;
-  margin: 15px 0;
-  transform: rotateX(-48deg);
-  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
-}
-
-p.text{
-    margin: 5px 0;
-}
-
-p.text span{
-    color: rgb(158, 248, 158);
-}
-</style>
+  </template>
+  
+  <script>
+  export default {
+    name: "SeatSelection",
+    data() {
+      return {
+        seats: this.generateSeats(5, 4), // 5 rows of 4 seats each
+      };
+    },
+    methods: {
+      generateSeats(rows, seatsPerRow) {
+        const seats = [];
+        let seatNumber = 1;
+        for (let rowIndex = 0; rowIndex < rows; rowIndex++) {
+          const row = [];
+          for (let seatIndex = 0; seatIndex < seatsPerRow; seatIndex++) {
+            row.push({
+              number: seatNumber++,
+              status: "available",
+              selected: false,
+            });
+          }
+          seats.push(row);
+        }
+        return seats;
+      },
+      toggleSeatSelection(rowIndex, seatIndex) {
+        const seat = this.seats[rowIndex][seatIndex];
+        if (seat.status === "available") {
+          seat.selected = !seat.selected;
+        }
+      },
+      confirmSelection() {
+        const selectedSeats = this.seats
+          .flatMap((row) =>
+            row.filter((seat) => seat.selected).map((seat) => seat.number)
+          );
+        alert(`Selected Seats: ${selectedSeats.join(", ")}`);
+      },
+    },
+  };
+  </script>
+  
+  <style scoped>
+  .seat {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .seat.available {
+    background-color: #093D77;
+    color: white;
+  }
+  .seat.unavailable {
+    background-color: #dc3545;
+    color: white;
+    cursor: not-allowed;
+  }
+  .seat.selected {
+    background-color: #ccc;
+    color: black;
+  }
+  </style>
+  

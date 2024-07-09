@@ -29,17 +29,22 @@ const router = createRouter({
     //   name: 'preventa',
     //   component: ()=> import('../views/PreventasView.vue')
     // },
-    // {
-    //   path: '/login',
-    //   name: 'login',
-    //   component: ()=> import('../views/LoginView.vue')
-    // }
+    {
+      path: '/login',
+      name: 'login',
+      component: ()=> import('../views/LoginView.vue')
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: ()=> import('../views/RegisterView.vue')
+    },
 
     //  //////////////////////////////////////////////////////////////// AUXILIAR
     {
         path: '/sucursales',
         name: 'sucursales',
-        component: ()=> import('../views/AsientosView.vue')
+        component: ()=> import('../views/SucursalView.vue')
     }
   ]
 })

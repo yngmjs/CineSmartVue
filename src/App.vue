@@ -40,6 +40,9 @@ import HelloWorld from './components/HelloWorld.vue'
               <li><RouterLink class="dropdown-item text-white" href="#">Preventas</RouterLink></li>
             </ul>
           </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/login">Iniciar Sesión</RouterLink>
+          </li>
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Buscar Pelicula" aria-label="Search">

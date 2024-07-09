@@ -24,6 +24,7 @@
                             </div>
                             <div class="col-4">
                                 <button class="btn btn-success">Comprar</button>
+                                <!-- <router-link to="/" class="btn btn-success">locura</router-link> -->
                             </div>
                         </div>
                     </li>

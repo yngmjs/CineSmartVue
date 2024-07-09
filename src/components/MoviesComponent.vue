@@ -62,6 +62,7 @@ export default {
                         <!-- <h2>{{ item.name.spanish }}</h2> -->
                          <!-- Usar el nombre español del ave, o ajusta según tus datos -->
                         <button type="button" class="btn btn-danger">Ver Horarios</button>
+                        <router-link to="/" class="btn btn-success">locura</router-link>
                     </div>
                 </div>
             </div>
