@@ -25,7 +25,7 @@ import HelloWorld from './components/HelloWorld.vue'
             <RouterLink class="nav-link" aria-current="page" to="/">Peliculas</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/">Sucursales</RouterLink>
+            <RouterLink class="nav-link" to="/sucursales">Sucursales</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" to="/confiteria">Confitería</RouterLink>

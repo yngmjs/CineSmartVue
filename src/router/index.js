@@ -34,6 +34,13 @@ const router = createRouter({
     //   name: 'login',
     //   component: ()=> import('../views/LoginView.vue')
     // }
+
+    //  //////////////////////////////////////////////////////////////// AUXILIAR
+    {
+        path: '/sucursales',
+        name: 'sucursales',
+        component: ()=> import('../views/AsientosView.vue')
+    }
   ]
 })
 
