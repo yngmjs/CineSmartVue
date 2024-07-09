@@ -14,7 +14,7 @@
             <br>
             <p>
                 <img src="../assets/iig.png" width="80px">
-                @: Cine.Smart
+                @Cine.Smart
             </p>
         </div>
         <div class="col">
@@ -22,7 +22,7 @@
             <br>
             <p>
                 <img src="../assets/fbb.png" width="80px">
-                Cine Smart Oficial
+                CineSmart Oficial
             </p>
         </div>
         <div class="col">

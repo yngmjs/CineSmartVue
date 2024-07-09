@@ -21,7 +21,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-            <RouterLink class="nav-link" aria-current="page" to="/">Peliculas</RouterLink>
+            <RouterLink class="nav-link" aria-current="page" to="/">Cartelera</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" to="/sucursales">Sucursales</RouterLink>
