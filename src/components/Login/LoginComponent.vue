@@ -144,13 +144,13 @@ export default {
   background-color: #1C3230;
 }
 .custom-modal .modal-content {
-  background-color: #343a40; /* Color de fondo del modal */
+  background-color: #1C3230; /* Color de fondo del modal */
   color: #ffffff;           /* Color del texto */
 }
 
 .custom-modal .modal-header,
 .custom-modal .modal-footer {
-  border-color: #444951;   /* Color del borde de la cabecera y pie del modal */
+  border-color: #1C3230;   /* Color del borde de la cabecera y pie del modal */
 }
 
 </style>
