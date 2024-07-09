@@ -28,12 +28,58 @@
       </div>
 
       <div class="row">
-            <router-link to="/register" class="btn btn-warning">Registrarme</router-link>
+            <router-link class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#registerModal">Registrarme</router-link>
             <!-- <button type="button" class="btn btn-warning" @click="register">
                 Registrarme
             </button> -->
       </div>
     </form>
+    <!-- Modal de Registro -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="registerModalLabel">Registrarme</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form @submit.prevent="register">
+                <div class="mb-3">
+                  <label for="registerEmail" class="form-label">Correo</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="registerEmail"
+                    v-model="registerEmail"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="registerPassword" class="form-label">Contraseña</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="registerPassword"
+                    v-model="registerPassword"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="confirmPassword"
+                    v-model="confirmPassword"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary">Registrarme</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 </template>
 

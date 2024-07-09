@@ -14,7 +14,7 @@
             <br>
             <p>
                 <img src="../assets/iig.png" width="80px">
-                Instagram: Cine.Smart
+                @: Cine.Smart
             </p>
         </div>
         <div class="col">
@@ -22,7 +22,7 @@
             <br>
             <p>
                 <img src="../assets/fbb.png" width="80px">
-                Facebook: Cine Smart Oficial
+                Cine Smart Oficial
             </p>
         </div>
         <div class="col">
