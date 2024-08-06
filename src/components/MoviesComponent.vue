@@ -7,7 +7,9 @@ export default {
             dato: '',
             imagen: '',
             ListaBird: [],  // Almacenará todos los registros de aves obtenidos de la API
-            aux: ''
+            aux: '',
+            search:'',
+            page:1,
         }
     },
     computed: {
@@ -16,6 +18,10 @@ export default {
         }
     },
     methods: {
+        // searchData(){
+        //     this.page=1;
+        //     this.mounted();
+        // },
         getBird() {
             axios.get('https://aves.ninjas.cl/api/birds/76-buteo-albigula')
                 .then(response => {
@@ -50,6 +56,14 @@ export default {
     <div class="container">
         <h1 class="text-white">Peliculas</h1>
         <hr>
+        <!-- <div class="row">
+            <div class="col-4">
+                <input type="text" v-model="search" placeholder="Buscar Pelicula" class="form-control" id="search" v-on:keyup.enter="searchData">
+            </div>
+            <div class="col-4">
+                <button type="submit" class="btn btn-warning" v-on:click="searchData">Buscar</button>
+            </div>
+        </div> -->
         <div class="row">
             <div v-for="item in firstTenBirds" :key="item.id" class="col-sm-4"> <!-- Asegúrate de usar una clave única como 'item.id' -->
                 <div class="card" style="margin-bottom: 10px;">

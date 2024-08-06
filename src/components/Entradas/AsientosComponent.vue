@@ -23,14 +23,16 @@
         </div>
       </div>
       <div class="d-flex justify-content-center">
-        <button class="btn btn-primary" @click="confirmSelection">
+        <RouterLink to="/comprartickets" class="btn btn-primary" @click="confirmSelection">
           Confirmar Asientos
-        </button>
+        </RouterLink>
       </div>
     </div>
   </template>
   
   <script>
+import { RouterLink } from 'vue-router';
+
   export default {
     name: "SeatSelection",
     data() {
@@ -67,6 +69,7 @@
             row.filter((seat) => seat.selected).map((seat) => seat.number)
           );
         alert(`Selected Seats: ${selectedSeats.join(", ")}`);
+        //alert(selectedSeats);
       },
     },
   };
