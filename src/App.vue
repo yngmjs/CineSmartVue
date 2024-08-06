@@ -29,15 +29,8 @@ import { RouterLink, RouterView } from 'vue-router'
           <li class="nav-item">
             <RouterLink class="nav-link" to="/confiteria">Confitería</RouterLink>
           </li>
-          <li class="nav-item dropdown">
-            <RouterLink class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              SmartClub
-            </RouterLink>
-            <ul class="dropdown-menu nab" aria-labelledby="navbarDropdown">
-              <li><RouterLink class="dropdown-item text-white" to="/promociones">Promociones</RouterLink></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><RouterLink class="dropdown-item text-white" href="#">Preventas</RouterLink></li>
-            </ul>
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/promociones">SmartClub</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" to="/login">Iniciar Sesión</RouterLink>

@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 <template>
 <div class="container">
     <h1 class="text-white">Confiteria</h1>
@@ -23,7 +19,7 @@
                                 <h2 class="text-dark">$28.990</h2>
                             </div>
                             <div class="col-4">
-                                <router-link to="/comprar" class="btn btn-success">Comprar</router-link>
+                                <button class="btn btn-success">Comprar</button>
                                 <!-- <router-link to="/" class="btn btn-success">locura</router-link> -->
                             </div>
                         </div>

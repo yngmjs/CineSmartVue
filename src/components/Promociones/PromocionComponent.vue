@@ -12,7 +12,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        <img class="img-fluid imagee" src="https://cdn.cineplanet.cl/contentAsset/raw-data/3afd1ec8-5eac-4000-a955-570960b28095">
+                        <img class="img-fluid imagee" src="/src/assets/claro.jpg">
                     </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -53,7 +53,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush" aria-expanded="false" aria-controls="flush-collapseOne">
-                        <img class="img-fluid imagee" src="https://cdn.cineplanet.cl/contentAsset/raw-data/6705edbf-9928-4e25-b1b6-14a383922566" alt="Imagen de la ave">
+                        <img class="img-fluid imagee" src="/src/assets/socio.jpg" alt="Imagen de la ave">
                     </button>
                     </h2>
                     <div id="flush" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
